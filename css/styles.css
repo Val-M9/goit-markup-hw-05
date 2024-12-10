@@ -484,7 +484,7 @@ img {
   background-color: rgba(var(--dark-cl));
 }
 
-.footer-wrapper {
+.footer .container {
   display: flex;
   align-items: baseline;
 }
@@ -574,7 +574,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity var(--trns-fast), visibility var(--trns-fast), box-shadow var(--trns-fast);
+  transition: opacity var(--trns-fast), visibility var(--trns-fast);
 }
 
 .backdrop.is-open {
@@ -617,7 +617,7 @@ img {
   border: 1px solid rgba(var(--black-cl) / 10%);
   border-radius: 50%;
   cursor: pointer;
-  transition: color var(--trns-fast), background-color var(--trns-fast), border var(--trns-fast);
+  transition: background-color var(--trns-fast), border var(--trns-fast);
 }
 
 .modal-close-btn:hover,
@@ -677,6 +677,7 @@ img {
   height: 40px;
   padding: 8px 38px;
   border: 1px solid rgba(var(--dark-cl) / 40%);
+  background-color: transparent;
   outline: transparent;
   border-radius: 4px;
   font-size: 12px;
@@ -709,7 +710,6 @@ img {
   height: 120px;
   color: rgba(var(--dark-cl) / 40%);
   resize: none;
-  background-color: transparent;
 }
 
 .form-field-comment::placeholder {
@@ -722,12 +722,10 @@ img {
 }
 
 .form-agreement-label {
-  display: flex;
   align-items: center;
-  gap: 8px;
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.04px;
+  letter-spacing: 0.04em;
   color: rgba(var(--light-slate-cl));
 }
 
@@ -737,6 +735,7 @@ img {
   align-items: center;
   width: 16px;
   height: 16px;
+  margin-right: 8px;
   border: 1px solid rgba(var(--dark-cl) / 40%);
   border-radius: 2px;
   fill: transparent;
@@ -749,7 +748,7 @@ img {
 }
 
 .form-agreement-checkbox-input:checked + .form-agreement-label > .form-custom-checkbox {
-  background-color: rgba(var(--accent-cl));
+  background-color: rgba(var(--blue-cl));
   border: none;
   fill: rgba(var(--light-cl));
 }
